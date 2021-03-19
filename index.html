@@ -9,10 +9,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div class="header">
     <div class="container">
+        <div class="Menu">
+            <ul>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="#">Акції</a></li>
+                <li><a href="#">Співробітництво</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </div>
+
         <div class="logo">
             <img src="images/icons/lighthouse.png" alt="Lighthouse logo">
             <div class="HeaderText">
@@ -21,10 +32,19 @@
             </div>
         </div>
 
-        <div class="searchBar">
-            <img src="images/icons/loupe.png" alt="Search">
-            <div class="SearchText">Я шукаю книгу...</div>
-        </div>
+
+        <form>
+            <div class="searchBar">
+                <div class="search">
+                    <input type="search" id="site-search" placeholder="Я шукаю книгу..."
+                           aria-label="Search through site content">
+                </div>
+                <div class="searchButton">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </form>
+
 
         <div class="HeaderText1">
             Література з усього світу по доступній ціні для кожного
@@ -35,15 +55,6 @@
         </div>
     </div>
 
-    <div class="Menu">
-        <ul>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="#">Акції</a></li>
-            <li><a href="#">Співробітництво</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакти</a></li>
-        </ul>
-    </div>
 
 </div>
 <div class="Block1">
@@ -94,8 +105,8 @@
 </div>
 
 <div class="Block3">
-    <img src="images/background3.png" alt = "background">
-    <div class ="container">
+    <img src="images/background3.png" alt="background">
+    <div class="container">
         <h1> Крокуйте в ногу разом з часом</h1>
         <span>
             Технології відкрили неймовірні можливості для сучасної людини.
@@ -109,7 +120,7 @@
             що дає змогу поринути в дивовижний світ на принципово новому рівні. Далі діло за вами - що саме обрати.
         </span>
 
-        <div class ="row">
+        <div class="row">
             <div class="col-4">
                 <div class="button">
                     <a href="#">
@@ -121,13 +132,13 @@
             </div>
 
             <div class="col-4">
-            <div class="button">
-                <a href="#">
+                <div class="button">
+                    <a href="#">
                     <span>
                         Топ друкованих книг
                     </span>
-                </a>
-            </div>
+                    </a>
+                </div>
             </div>
             <div class="col-4">
                 <div class="button">
@@ -144,22 +155,51 @@
 </div>
 <div class="Footer">
     <div class="container">
-        <div class="row">
+        <div class="row align-items-start">
             <div class="col-3">
                 <h5>Lighthouse</h5>
-                <span></span>
+                <span class="Content">Перетворюємо світ.</span>
             </div>
             <div class="col-2">
+                <ul>
+                    <li><span class="Header">Навігація</span></li>
+                    <li><a href="#"><span class="Content">Головна</span></a></li>
+                    <li><a href="#"><span class="Content">Про нас</span></a></li>
+                    <li><a href="#"><span class="Content">Співробітництво</span></a></li>
+                </ul>
 
             </div>
             <div class="col-2">
-
+                <span class="Header">Головний офіс</span>
+                <span class="Content">Україна, Львів</span>
+                <span class="Content">вул. Архітекторська, 5</span>
+                <span class="Content">79013</span>
             </div>
-            <div class="col-2">
-
+            <div class="col-md-auto">
+                <ul>
+                    <li><span class="Header">Ми в соц. мережах</span></li>
+                    <li><a href="#"><span class="Content">YouTube</span></a></li>
+                    <li><a href="#"><span class="Content">Twitter</span></a></li>
+                    <li><a href="#"><span class="Content">LinkedIn</span></a></li>
+                    <li><a href="#"><span class="Content">Instagram</span></a></li>
+                </ul>
             </div>
-            <div class="col-2">
+            <div class="col-md-auto">
+                <ul>
+                    <li><span class="Header">Підтримка</span></li>
+                    <li><a href="#"><span class="Content">Клієнтам</span></a></li>
+                    <li><a href="#"><span class="Content">Авторам</span></a></li>
+                    <li><a href="#"><span class="Content">Доставка</span></a></li>
+                    <li><a href="#"><span class="Content">Повернення</span></a></li>
+                </ul>
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="col-md-2 offset-md-5">
+                <span class="Header">Контакти</span>
+                <span class="Content">info@lighthouse.com</span>
+                <span class="Content">+38(097)-526-33-11</span>
             </div>
         </div>
     </div>

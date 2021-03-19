@@ -40,6 +40,16 @@ body {
     height: 100px;
     margin-right: 30px;
 }
+.searchBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#site-search {
+    font-size: 17px;
+    padding: 6px;
+    border: none;
+}
 .HeaderText {
     display: flex;
     flex-direction: column;
@@ -63,8 +73,7 @@ body {
     align-items: center;
     color: #FFFFFF;
 }
-
-.searchBar {
+.searchBar #site-search{
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -72,14 +81,16 @@ body {
     width: 830px;
     height: 54px;
     opacity: 0.8;
-    border-radius: 5px;
-
+    border: 1px solid #ccc;
 }
-.searchBar img {
+.searchBar button {
     padding: 10px;
-    width: 34px;
-    height: 34px;
-    float: left;
+    width: 54px;
+    height: 54px;
+    background: #ddd;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
 }
 .SearchText {
     font-style: normal;
@@ -114,7 +125,7 @@ body {
     height: 278px;
     position: absolute;
     left: 250px;
-    top: 365px;
+    top: 400px;
 }
 
 .HeaderText2 {
@@ -122,7 +133,7 @@ body {
     width: 500px;
     height: 202px;
     left: 580px;
-    top: 602px;
+    top: 700px;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -131,6 +142,8 @@ body {
     align-items: center;
     text-align: right;
     color: #FFFFFF;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
     text-shadow:
             -1px -1px 0 #000,
             0   -1px 0 #000,
@@ -145,12 +158,8 @@ body {
 
 .Menu {
     z-index: 100;
-    background-color: #E47106;
-    display: block;
     width: 1282px;
     height: 120px;
-    position: absolute;
-    bottom: 156px;
     left: 16.6%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 50px;
@@ -358,17 +367,16 @@ body {
     background: linear-gradient(0deg, rgba(49, 57, 69, 0.72), rgba(49, 57, 69, 0.72)), url("../images/footer.png");
 }
 .Footer .container {
-    height: 640px;
+    height: 440px;
+    padding-top: 200px;
 }
 .Footer .row {
-    padding-top: 100px;
+    margin: 30px;
 }
 .Footer h5 {
     width: 270px;
     height: 39px;
-    left: 375px;
-    top: 4162px;
-
+    margin: 0;
     font-family: Montserrat, serif;
     font-style: normal;
     font-weight: 600;
@@ -378,4 +386,41 @@ body {
     align-items: center;
 
     color: #FFFFFF;
+}
+
+.Footer .Header {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.Footer .Content {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+
+    color: #BDBDBD;
+}
+.Footer ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.Footer li {
+    padding: 0;
+    margin: 0;
+    line-height: 23px;
+    height: 23px;
+
+}
+.Footer a{
+    text-decoration: none;
 }

@@ -495,6 +495,7 @@ body {
 }
 
 .content .container {
+    height: 1300px;
     background-color: #FFFFFF;
     z-index: 1;
     padding: 0;
@@ -525,7 +526,7 @@ body {
 
 aside {
     width: 273px;
-    height: 840px;
+    height: 1140px;
     background-color: #FBFBFB;
     z-index: 4;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -542,6 +543,7 @@ aside span {
     font-size: 24px;
     line-height: 29px;
     padding-left: 30px;
+    margin-bottom: 15px;
 }
 
 .checkbox {
@@ -561,6 +563,9 @@ aside span {
     height: 330px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+.Author .Options {
+    height: 230px;
 }
 .PriceControl {
     display: flex;
@@ -603,4 +608,79 @@ aside span {
     margin-left: 8px;
     margin-right: 8px;
     color: #000000;
+}
+
+.Page {
+    display: flex;
+}
+
+.Page_section {
+    margin-left: 100px;
+}
+.Page_section h1{
+    width: 702px;
+    height: 94px;
+
+    font-size: 44px;
+    line-height: 54px;
+    text-align: center;
+    margin-bottom: 0;
+    color: #000000;
+}
+
+.Book {
+    width: 100px;
+    height: 239px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px 20px 0;
+    margin: 0 15px 30px;
+}
+
+.Book img {
+    width: 100px;
+    height: 150px;
+}
+
+.Book .name {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.Book .author {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.Book .price {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.rw {
+    display: flex;
+    flex-direction: row;
+}
+
+.Pages {
+    text-align: center;
+    margin-top: 30px;
+}
+.Pages a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 50px;
+    color: #4C5661;
+    margin-right: 25px;
+}
+
+#Active {
+    width: 50px;
+    height: 50px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #4C5661;
+    border-radius: 60px;
 }

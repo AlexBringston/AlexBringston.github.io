@@ -190,6 +190,7 @@ body {
     position: fixed;
     bottom: 0;
     z-index: 101;
+
 }
 .Menu.mobile img {
     padding-top: 13px;
@@ -199,16 +200,16 @@ body {
 }
 .Menu.mobile ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     height: 50px;
-
+    margin: 0;
+    padding: 0 5px;
+    min-width: 50px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .Menu.mobile li {
     display:inline-block;
-    padding-left: 5%;
-    padding-right: 5%;
     height: 50px;
     line-height: 50px;
 }
@@ -425,6 +426,10 @@ body {
     align-items: center;
 
     color: #BDBDBD;
+}
+
+.Footer span {
+    display: inline-block;
 }
 .Footer ul {
     padding: 0;
@@ -847,12 +852,15 @@ aside span {
     }
 }
 
-@media screen and (min-width:426px) and (max-width: 1024px) {
+@media screen and (min-width:426px) and (max-width: 1200px) {
     .Block2 .container .row .col-5 {
         font-size: 22px;
         line-height: 150%;
     }
 
+    .searchBar .search input{
+        width: 300px;
+    }
     .Footer.mobile, .Footer.desktop {
         display: none;
     }
@@ -860,6 +868,9 @@ aside span {
         display: inline-block;
     }
 
+    .Footer.tablet .row {
+        margin-left: 0;
+    }
     .Footer.tablet {
         height: 600px;
         padding-top: 0;
@@ -869,9 +880,15 @@ aside span {
     .Footer.tablet .container {
         padding-top: 60px;
     }
+    .Footer.tablet .col {
+        padding-bottom: 15px;
+    }
+    .Block3.desktop .container .row .col-4 .button a span {
+        font-size: 20px !important;
+    }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
     .header {
         height: 590px;
     }
@@ -919,7 +936,7 @@ aside span {
         height: 100px;
     }
     .HeaderText2 {
-        width: calc(100% - 30px);
+        width: calc(100% - 40px) !important;
         left: 10%;
         font-size: 14px;
         line-height: 18px;
@@ -929,8 +946,11 @@ aside span {
     h1 {
         font-size:24px !important;
         line-height: 36px !important;
-        height: 154px !important;
+        height: 130px !important;
         padding: 20px 0 30px 0 !important;
+    }
+    .Block1.mobile {
+        width: 100%;
     }
     .Block1.mobile ul {
         padding: 0;
@@ -1000,6 +1020,9 @@ aside span {
         margin-top: 20px;
     }
 
+    .Block2.mobile {
+        width: 100%;
+    }
     .Block2.mobile, .Block2.mobile .container   {
         height: 440px;
     }
@@ -1033,7 +1056,6 @@ aside span {
     }
     .Block3.mobile .container {
         height: 500px;
-        margin: 0 30px;
         padding: 0;
     }
     .Block3.mobile h1 {
@@ -1075,11 +1097,12 @@ aside span {
         line-height: 22px;
 
         color: #000000;
-
     }
-    .Footer {
 
-    }
+
+}
+
+@media screen and (max-width: 425px) {
     .Footer.mobile {
         height: 805px;
         background: url("../images/footer-mobile.png");
